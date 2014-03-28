@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: 
+  dia: 
+  hora_i: 
+  hora_f: 
+  alumnos: MyString
+
+two:
+  nombre: 
+  dia: 
+  hora_i: 
+  hora_f: 
+  alumnos: MyString

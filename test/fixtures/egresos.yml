@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: 
+  descripcion: 
+  tipo: 
+  monto: 
+  diario: 
+  beer_tan: 
+  pepsico: 
+  ro_golo: 
+  payes: 
+  art_limpieza: 
+  varios: 
+  retiro_gus: 
+  fecha: 
+  usuario: MyString
+
+two:
+  nombre: 
+  descripcion: 
+  tipo: 
+  monto: 
+  diario: 
+  beer_tan: 
+  pepsico: 
+  ro_golo: 
+  payes: 
+  art_limpieza: 
+  varios: 
+  retiro_gus: 
+  fecha: 
+  usuario: MyString

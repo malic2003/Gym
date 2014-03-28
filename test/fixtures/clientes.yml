@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: 
+  apellido: 
+  dni: 
+  tel_casa: 
+  tel_particular: 
+  direccion: 
+  mail: 
+  notas: 
+  edad: 
+  nacimiento: 
+  cuil: 
+  tel_emergencia: 
+  medico_cabe: 
+  telefono_cabe: 
+  medico_trat: 
+  telefono_trat: 
+  fecha_ultimo_control: 
+  patologia: 
+  actividades: 
+  objetivos: 
+  epicrisis: 
+  asistencia: 
+  vencimiento: 
+  sesiones: 
+  costo: MyString
+
+two:
+  nombre: 
+  apellido: 
+  dni: 
+  tel_casa: 
+  tel_particular: 
+  direccion: 
+  mail: 
+  notas: 
+  edad: 
+  nacimiento: 
+  cuil: 
+  tel_emergencia: 
+  medico_cabe: 
+  telefono_cabe: 
+  medico_trat: 
+  telefono_trat: 
+  fecha_ultimo_control: 
+  patologia: 
+  actividades: 
+  objetivos: 
+  epicrisis: 
+  asistencia: 
+  vencimiento: 
+  sesiones: 
+  costo: MyString

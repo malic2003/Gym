@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: 
+  apellido: 
+  dni: 
+  tel_casa: 
+  tel_particular: 
+  direccion: 
+  mail: 
+  notas: 
+  capacitacion: 
+  experiencia: 
+  horarios: 
+  observaciones: 
+  edad: 
+  nacimiento: 
+  cuil: 
+  tel_emergencia: 
+  valor_hora: 
+  horas_mes: 
+  horas_mes_anterior: 
+  porcentaje: 
+  mes: 
+  clases: 
+  salario: MyString
+
+two:
+  nombre: 
+  apellido: 
+  dni: 
+  tel_casa: 
+  tel_particular: 
+  direccion: 
+  mail: 
+  notas: 
+  capacitacion: 
+  experiencia: 
+  horarios: 
+  observaciones: 
+  edad: 
+  nacimiento: 
+  cuil: 
+  tel_emergencia: 
+  valor_hora: 
+  horas_mes: 
+  horas_mes_anterior: 
+  porcentaje: 
+  mes: 
+  clases: 
+  salario: MyString

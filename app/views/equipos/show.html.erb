@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @equipo.nombre %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%= @equipo.descripcion %>
+</p>
+
+<p>
+  <b>Fecha ultimo:</b>
+  <%= @equipo.fecha_ultimo %>
+</p>
+
+<p>
+  <b>Fecha proximo:</b>
+  <%= @equipo.fecha_proximo %>
+</p>
+
+<p>
+  <b>Gasto:</b>
+  <%= @equipo.gasto %>
+</p>
+
+
+<%= link_to 'Edit', edit_equipo_path(@equipo) %> |
+<%= link_to 'Back', equipos_path %>

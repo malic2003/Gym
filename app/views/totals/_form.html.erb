@@ -1,0 +1,33 @@
+<%= form_for(@total) do |f| %>
+  <% if @total.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@total.errors.count, "error") %> prohibited this total from being saved:</h2>
+
+      <ul>
+      <% @total.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :rehab %><br />
+    <%= f.text_field :rehab %>
+  </div>
+  <div class="field">
+    <%= f.label :gym %><br />
+    <%= f.text_field :gym %>
+  </div>
+  <div class="field">
+    <%= f.label :cancha %><br />
+    <%= f.text_field :cancha %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

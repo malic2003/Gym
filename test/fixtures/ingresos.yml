@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: 
+  descripcion: 
+  monto: 
+  turno: 
+  bar: 
+  paleta: 
+  prot_grip: 
+  pelota: 
+  fecha: 
+  cliente: MyString
+
+two:
+  nombre: 
+  descripcion: 
+  monto: 
+  turno: 
+  bar: 
+  paleta: 
+  prot_grip: 
+  pelota: 
+  fecha: 
+  cliente: MyString

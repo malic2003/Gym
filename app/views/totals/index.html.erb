@@ -1,0 +1,29 @@
+<h1>Listing totals</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Rehab</th>
+    <th>Gym</th>
+    <th>Cancha</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @totals.each do |total| %>
+  <tr>
+    <td><%= total.nombre %></td>
+    <td><%= total.rehab %></td>
+    <td><%= total.gym %></td>
+    <td><%= total.cancha %></td>
+    <td><%= link_to 'Show', total %></td>
+    <td><%= link_to 'Edit', edit_total_path(total) %></td>
+    <td><%= link_to 'Destroy', total, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Total', new_total_path %>

@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @ingreso.nombre %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%= @ingreso.descripcion %>
+</p>
+
+<p>
+  <b>Monto:</b>
+  <%= @ingreso.monto %>
+</p>
+
+<p>
+  <b>Turno:</b>
+  <%= @ingreso.turno %>
+</p>
+
+<p>
+  <b>Bar:</b>
+  <%= @ingreso.bar %>
+</p>
+
+<p>
+  <b>Paleta:</b>
+  <%= @ingreso.paleta %>
+</p>
+
+<p>
+  <b>Prot grip:</b>
+  <%= @ingreso.prot_grip %>
+</p>
+
+<p>
+  <b>Pelota:</b>
+  <%= @ingreso.pelota %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @ingreso.fecha %>
+</p>
+
+<p>
+  <b>Cliente:</b>
+  <%= @ingreso.cliente %>
+</p>
+
+
+<%= link_to 'Edit', edit_ingreso_path(@ingreso) %> |
+<%= link_to 'Back', ingresos_path %>

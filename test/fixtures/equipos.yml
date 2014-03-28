@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: 
+  descripcion: 
+  fecha_ultimo: 
+  fecha_proximo: 
+  gasto: MyString
+
+two:
+  nombre: 
+  descripcion: 
+  fecha_ultimo: 
+  fecha_proximo: 
+  gasto: MyString

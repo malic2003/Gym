@@ -1,0 +1,57 @@
+<%= form_for(@ingreso) do |f| %>
+  <% if @ingreso.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ingreso.errors.count, "error") %> prohibited this ingreso from being saved:</h2>
+
+      <ul>
+      <% @ingreso.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br />
+    <%= f.text_field :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :monto %><br />
+    <%= f.text_field :monto %>
+  </div>
+  <div class="field">
+    <%= f.label :turno %><br />
+    <%= f.text_field :turno %>
+  </div>
+  <div class="field">
+    <%= f.label :bar %><br />
+    <%= f.text_field :bar %>
+  </div>
+  <div class="field">
+    <%= f.label :paleta %><br />
+    <%= f.text_field :paleta %>
+  </div>
+  <div class="field">
+    <%= f.label :prot_grip %><br />
+    <%= f.text_field :prot_grip %>
+  </div>
+  <div class="field">
+    <%= f.label :pelota %><br />
+    <%= f.text_field :pelota %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha %><br />
+    <%= f.text_field :fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :cliente %><br />
+    <%= f.text_field :cliente %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

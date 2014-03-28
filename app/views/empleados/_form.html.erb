@@ -1,0 +1,109 @@
+<%= form_for(@empleado) do |f| %>
+  <% if @empleado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@empleado.errors.count, "error") %> prohibited this empleado from being saved:</h2>
+
+      <ul>
+      <% @empleado.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido %><br />
+    <%= f.text_field :apellido %>
+  </div>
+  <div class="field">
+    <%= f.label :dni %><br />
+    <%= f.text_field :dni %>
+  </div>
+  <div class="field">
+    <%= f.label :tel_casa %><br />
+    <%= f.text_field :tel_casa %>
+  </div>
+  <div class="field">
+    <%= f.label :tel_particular %><br />
+    <%= f.text_field :tel_particular %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br />
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :mail %><br />
+    <%= f.text_field :mail %>
+  </div>
+  <div class="field">
+    <%= f.label :notas %><br />
+    <%= f.text_field :notas %>
+  </div>
+  <div class="field">
+    <%= f.label :capacitacion %><br />
+    <%= f.text_field :capacitacion %>
+  </div>
+  <div class="field">
+    <%= f.label :experiencia %><br />
+    <%= f.text_field :experiencia %>
+  </div>
+  <div class="field">
+    <%= f.label :horarios %><br />
+    <%= f.text_field :horarios %>
+  </div>
+  <div class="field">
+    <%= f.label :observaciones %><br />
+    <%= f.text_field :observaciones %>
+  </div>
+  <div class="field">
+    <%= f.label :edad %><br />
+    <%= f.text_field :edad %>
+  </div>
+  <div class="field">
+    <%= f.label :nacimiento %><br />
+    <%= f.text_field :nacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :cuil %><br />
+    <%= f.text_field :cuil %>
+  </div>
+  <div class="field">
+    <%= f.label :tel_emergencia %><br />
+    <%= f.text_field :tel_emergencia %>
+  </div>
+  <div class="field">
+    <%= f.label :valor_hora %><br />
+    <%= f.text_field :valor_hora %>
+  </div>
+  <div class="field">
+    <%= f.label :horas_mes %><br />
+    <%= f.text_field :horas_mes %>
+  </div>
+  <div class="field">
+    <%= f.label :horas_mes_anterior %><br />
+    <%= f.text_field :horas_mes_anterior %>
+  </div>
+  <div class="field">
+    <%= f.label :porcentaje %><br />
+    <%= f.text_field :porcentaje %>
+  </div>
+  <div class="field">
+    <%= f.label :mes %><br />
+    <%= f.text_field :mes %>
+  </div>
+  <div class="field">
+    <%= f.label :clases %><br />
+    <%= f.text_field :clases %>
+  </div>
+  <div class="field">
+    <%= f.label :salario %><br />
+    <%= f.text_field :salario %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

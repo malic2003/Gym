@@ -1,0 +1,71 @@
+<h1>Listing clientes</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Dni</th>
+    <th>Tel casa</th>
+    <th>Tel particular</th>
+    <th>Direccion</th>
+    <th>Mail</th>
+    <th>Notas</th>
+    <th>Edad</th>
+    <th>Nacimiento</th>
+    <th>Cuil</th>
+    <th>Tel emergencia</th>
+    <th>Medico cabe</th>
+    <th>Telefono cabe</th>
+    <th>Medico trat</th>
+    <th>Telefono trat</th>
+    <th>Fecha ultimo control</th>
+    <th>Patologia</th>
+    <th>Actividades</th>
+    <th>Objetivos</th>
+    <th>Epicrisis</th>
+    <th>Asistencia</th>
+    <th>Vencimiento</th>
+    <th>Sesiones</th>
+    <th>Costo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @clientes.each do |cliente| %>
+  <tr>
+    <td><%= cliente.nombre %></td>
+    <td><%= cliente.apellido %></td>
+    <td><%= cliente.dni %></td>
+    <td><%= cliente.tel_casa %></td>
+    <td><%= cliente.tel_particular %></td>
+    <td><%= cliente.direccion %></td>
+    <td><%= cliente.mail %></td>
+    <td><%= cliente.notas %></td>
+    <td><%= cliente.edad %></td>
+    <td><%= cliente.nacimiento %></td>
+    <td><%= cliente.cuil %></td>
+    <td><%= cliente.tel_emergencia %></td>
+    <td><%= cliente.medico_cabe %></td>
+    <td><%= cliente.telefono_cabe %></td>
+    <td><%= cliente.medico_trat %></td>
+    <td><%= cliente.telefono_trat %></td>
+    <td><%= cliente.fecha_ultimo_control %></td>
+    <td><%= cliente.patologia %></td>
+    <td><%= cliente.actividades %></td>
+    <td><%= cliente.objetivos %></td>
+    <td><%= cliente.epicrisis %></td>
+    <td><%= cliente.asistencia %></td>
+    <td><%= cliente.vencimiento %></td>
+    <td><%= cliente.sesiones %></td>
+    <td><%= cliente.costo %></td>
+    <td><%= link_to 'Show', cliente %></td>
+    <td><%= link_to 'Edit', edit_cliente_path(cliente) %></td>
+    <td><%= link_to 'Destroy', cliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cliente', new_cliente_path %>

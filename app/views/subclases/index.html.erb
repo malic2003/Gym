@@ -1,0 +1,31 @@
+<h1>Listing subclases</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Dia</th>
+    <th>Hora i</th>
+    <th>Hora f</th>
+    <th>Alumnos</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @subclases.each do |subclase| %>
+  <tr>
+    <td><%= subclase.nombre %></td>
+    <td><%= subclase.dia %></td>
+    <td><%= subclase.hora_i %></td>
+    <td><%= subclase.hora_f %></td>
+    <td><%= subclase.alumnos %></td>
+    <td><%= link_to 'Show', subclase %></td>
+    <td><%= link_to 'Edit', edit_subclase_path(subclase) %></td>
+    <td><%= link_to 'Destroy', subclase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Subclase', new_subclase_path %>

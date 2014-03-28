@@ -1,0 +1,27 @@
+<h1>Listing sueldos</h1>
+
+<table>
+  <tr>
+    <th>Horas trab</th>
+    <th>Pago</th>
+    <th>Fecha</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sueldos.each do |sueldo| %>
+  <tr>
+    <td><%= sueldo.horas_trab %></td>
+    <td><%= sueldo.pago %></td>
+    <td><%= sueldo.fecha %></td>
+    <td><%= link_to 'Show', sueldo %></td>
+    <td><%= link_to 'Edit', edit_sueldo_path(sueldo) %></td>
+    <td><%= link_to 'Destroy', sueldo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sueldo', new_sueldo_path %>

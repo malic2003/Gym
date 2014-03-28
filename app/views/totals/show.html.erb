@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @total.nombre %>
+</p>
+
+<p>
+  <b>Rehab:</b>
+  <%= @total.rehab %>
+</p>
+
+<p>
+  <b>Gym:</b>
+  <%= @total.gym %>
+</p>
+
+<p>
+  <b>Cancha:</b>
+  <%= @total.cancha %>
+</p>
+
+
+<%= link_to 'Edit', edit_total_path(@total) %> |
+<%= link_to 'Back', totals_path %>

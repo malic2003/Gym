@@ -1,0 +1,67 @@
+<h1>Listing empleados</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Dni</th>
+    <th>Tel casa</th>
+    <th>Tel particular</th>
+    <th>Direccion</th>
+    <th>Mail</th>
+    <th>Notas</th>
+    <th>Capacitacion</th>
+    <th>Experiencia</th>
+    <th>Horarios</th>
+    <th>Observaciones</th>
+    <th>Edad</th>
+    <th>Nacimiento</th>
+    <th>Cuil</th>
+    <th>Tel emergencia</th>
+    <th>Valor hora</th>
+    <th>Horas mes</th>
+    <th>Horas mes anterior</th>
+    <th>Porcentaje</th>
+    <th>Mes</th>
+    <th>Clases</th>
+    <th>Salario</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @empleados.each do |empleado| %>
+  <tr>
+    <td><%= empleado.nombre %></td>
+    <td><%= empleado.apellido %></td>
+    <td><%= empleado.dni %></td>
+    <td><%= empleado.tel_casa %></td>
+    <td><%= empleado.tel_particular %></td>
+    <td><%= empleado.direccion %></td>
+    <td><%= empleado.mail %></td>
+    <td><%= empleado.notas %></td>
+    <td><%= empleado.capacitacion %></td>
+    <td><%= empleado.experiencia %></td>
+    <td><%= empleado.horarios %></td>
+    <td><%= empleado.observaciones %></td>
+    <td><%= empleado.edad %></td>
+    <td><%= empleado.nacimiento %></td>
+    <td><%= empleado.cuil %></td>
+    <td><%= empleado.tel_emergencia %></td>
+    <td><%= empleado.valor_hora %></td>
+    <td><%= empleado.horas_mes %></td>
+    <td><%= empleado.horas_mes_anterior %></td>
+    <td><%= empleado.porcentaje %></td>
+    <td><%= empleado.mes %></td>
+    <td><%= empleado.clases %></td>
+    <td><%= empleado.salario %></td>
+    <td><%= link_to 'Show', empleado %></td>
+    <td><%= link_to 'Edit', edit_empleado_path(empleado) %></td>
+    <td><%= link_to 'Destroy', empleado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Empleado', new_empleado_path %>

@@ -1,0 +1,29 @@
+<%= form_for(@sueldo) do |f| %>
+  <% if @sueldo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sueldo.errors.count, "error") %> prohibited this sueldo from being saved:</h2>
+
+      <ul>
+      <% @sueldo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :horas_trab %><br />
+    <%= f.text_field :horas_trab %>
+  </div>
+  <div class="field">
+    <%= f.label :pago %><br />
+    <%= f.text_field :pago %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha %><br />
+    <%= f.text_field :fecha %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

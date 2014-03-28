@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @subclase.nombre %>
+</p>
+
+<p>
+  <b>Dia:</b>
+  <%= @subclase.dia %>
+</p>
+
+<p>
+  <b>Hora i:</b>
+  <%= @subclase.hora_i %>
+</p>
+
+<p>
+  <b>Hora f:</b>
+  <%= @subclase.hora_f %>
+</p>
+
+<p>
+  <b>Alumnos:</b>
+  <%= @subclase.alumnos %>
+</p>
+
+
+<%= link_to 'Edit', edit_subclase_path(@subclase) %> |
+<%= link_to 'Back', subclases_path %>

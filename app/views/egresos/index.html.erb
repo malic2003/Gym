@@ -1,0 +1,49 @@
+<h1>Listing egresos</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Descripcion</th>
+    <th>Tipo</th>
+    <th>Monto</th>
+    <th>Diario</th>
+    <th>Beer tan</th>
+    <th>Pepsico</th>
+    <th>Ro golo</th>
+    <th>Payes</th>
+    <th>Art limpieza</th>
+    <th>Varios</th>
+    <th>Retiro gus</th>
+    <th>Fecha</th>
+    <th>Usuario</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @egresos.each do |egreso| %>
+  <tr>
+    <td><%= egreso.nombre %></td>
+    <td><%= egreso.descripcion %></td>
+    <td><%= egreso.tipo %></td>
+    <td><%= egreso.monto %></td>
+    <td><%= egreso.diario %></td>
+    <td><%= egreso.beer_tan %></td>
+    <td><%= egreso.pepsico %></td>
+    <td><%= egreso.ro_golo %></td>
+    <td><%= egreso.payes %></td>
+    <td><%= egreso.art_limpieza %></td>
+    <td><%= egreso.varios %></td>
+    <td><%= egreso.retiro_gus %></td>
+    <td><%= egreso.fecha %></td>
+    <td><%= egreso.usuario %></td>
+    <td><%= link_to 'Show', egreso %></td>
+    <td><%= link_to 'Edit', edit_egreso_path(egreso) %></td>
+    <td><%= link_to 'Destroy', egreso, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Egreso', new_egreso_path %>

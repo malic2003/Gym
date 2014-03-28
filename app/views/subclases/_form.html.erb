@@ -1,0 +1,37 @@
+<%= form_for(@subclase) do |f| %>
+  <% if @subclase.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@subclase.errors.count, "error") %> prohibited this subclase from being saved:</h2>
+
+      <ul>
+      <% @subclase.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :dia %><br />
+    <%= f.text_field :dia %>
+  </div>
+  <div class="field">
+    <%= f.label :hora_i %><br />
+    <%= f.text_field :hora_i %>
+  </div>
+  <div class="field">
+    <%= f.label :hora_f %><br />
+    <%= f.text_field :hora_f %>
+  </div>
+  <div class="field">
+    <%= f.label :alumnos %><br />
+    <%= f.text_field :alumnos %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

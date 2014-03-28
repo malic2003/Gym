@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Horas trab:</b>
+  <%= @sueldo.horas_trab %>
+</p>
+
+<p>
+  <b>Pago:</b>
+  <%= @sueldo.pago %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @sueldo.fecha %>
+</p>
+
+
+<%= link_to 'Edit', edit_sueldo_path(@sueldo) %> |
+<%= link_to 'Back', sueldos_path %>
